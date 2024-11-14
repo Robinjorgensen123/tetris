@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #111;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    gap: 1px;
+    margin: 50px;
+    background-color: #222;
+    border: 2px solid #fff;
+}
+
+.grid div {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #222;
+   
+}
+
+.taken {
+    height: 1px;
+}
+
+.tetromino {
+    background-color: #f39c12;
+}
+
+
+#StartBtn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#score {
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+    font-size: 16px;
+}
+
+.mini-grid {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    flex-wrap: wrap;
+    height: 80px;
+    width: 80px;
+    background-color: red;
+}
+.mini-grid div {
+    height: 20px;
+    width: 20px;
+
+}
+.container {
+    display: flex;
+}
