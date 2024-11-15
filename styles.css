@@ -3,9 +3,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     margin: 0;
-    background-color: #111;
+    
 
 }
 
@@ -13,7 +13,7 @@ body {
     display: grid;
     grid-template-columns: repeat(10, 30px);
     gap: 1px;
-    margin: 50px;
+    margin: 20px;
     background-color: #222;
     border: 2px solid #fff;
 }
@@ -48,9 +48,14 @@ button:hover {
 }
 
 #score {
-    font-size: 20px;
+    font-size: 60px;
     margin-bottom: 20px;
     background-color: aquamarine;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+span {
     font-size: 16px;
 }
 
@@ -58,11 +63,12 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-self: center;
+ 
     align-self: center;
     flex-wrap: wrap;
     height: 80px;
     width: 80px;
-    background-color: red;
+    background-color: white;
 }
 .mini-grid div {
     height: 20px;
@@ -71,4 +77,38 @@ button:hover {
 }
 .container {
     display: flex;
+}
+
+#game-over-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+}
+
+#game-over-message h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#game-over-message button {
+    background-color: black;
+    color: red;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#game-over-message button:hover {
+    background-color: #222;
+}
+
+.taken {
+    background-color: #f39c12;
 }
