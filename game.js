@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const displaySquares = document.querySelectorAll('.mini-grid div');
-    const displayWidth = 4;
+    const displayWidth = 6;
     let displayIndex = 0;
 
     const upNextTetrominoes = [
