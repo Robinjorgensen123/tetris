@@ -1,12 +1,27 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
+    margin: 0;
+    padding: 0;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: darkgrey;
+    
     
 
+}
+.game-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 1000px;
 }
 
 .grid {
@@ -14,6 +29,7 @@ body {
     grid-template-columns: repeat(10, 30px);
     gap: 1px;
     margin: 20px;
+    width: 100%;
     background-color: #222;
     border: 2px solid #fff;
 }
@@ -41,18 +57,24 @@ body {
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
+    height: 50px;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin-bottom: 300px;
 }
 
 button:hover {
     background-color: #2980b9;
+    
 }
 
 #score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
     font-size: 60px;
-    margin-bottom: 20px;
-    background-color: aquamarine;
-    font-size: 30px;
-    margin-left: 5px;
+    margin-left: 50px;
 }
 
 span {
@@ -75,6 +97,8 @@ span {
     background-color: transparent;
 
 }
+
+
 
 .container {
     display: flex;
@@ -124,4 +148,14 @@ div h1 {
     width: 100px;
     justify-self: flex-start;
     align-self: flex;
+}
+
+#highScore-container {
+    display: flex;
+    height: 90vh;
+    margin-top: 70px;
+    background-color: #333;
+    color:#fff;
+    padding: 10px;
+   
 }
